@@ -1,40 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# UserStory
 
-## Getting Started
+## Задачи для разработки биллинга в личном кабинете пользователя
 
-First, run the development server:
+# 1.Отображение информации о счетах
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- UI комп. для списка счетов
+- Подключиться к бэкенду для получения данных о счетах
+- UI для баланса и валюты каждого счета
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+\*Стори поинты: 3
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+# 2.Форма для пополнения счета
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- Создать форму для реквизитов компании или банковской карты
+- Обработать возможность добавления нескольких реквизитов/карт
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+\*Стори поинты: 3
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+# 3.Роли для пополнения
 
-## Learn More
+- Функционал Для B2B для генерации счёта на оплату в PDF
+- Для B2C редиректить на страницу пополнения через эквайринг
 
-To learn more about Next.js, take a look at the following resources:
+\*Стори поинты: 5
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# 4.Отображение списка операций по счету
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Cделать UI для отображения списка операций
+- Ручки для апи бека для получения данных об операциях
+- Ui для суммы, даты и описания каждой операции
 
-## Deploy on Vercel
+\*Стори поинты: 5+
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# 5. Тестирование
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Покрыть тестами критично важные места
+
+\*Стори поинты: 2-3
+
+## Макет - схема:
+
+https://www.figma.com/file/1SR9NdkdvRUmz7kD4U9mFO/Untitled?type=design&node-id=0-1&mode=design&t=PtO9ZKbiSUCWr6yz-0
+
+## Описание тестирования
+
+# Проверка формы:
+
+*Открыть страницу пополнения.
+*Проверить кнопку B2C на редирект
+*Проверить наличие полей формы.
+*Попробовать отправить пустую форму.
+*Проверить валидацию.
+*Ввести некорректные данные в поля формы и попытаться отправить форму.
+*Ввести данные в поля формы и отправить форму.
+\*Проверить, что форма успешно отправляется.
+
+# Проверка компонента счетов
+
+*Открыть страницу со счетами
+*Проверить наличие списка счетов
+*Проверить колонки на наличие данных в них

@@ -1,0 +1,71 @@
+.wrapper {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.formType {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.formType button {
+  margin-right: 10px;
+}
+
+.formRequisites,
+.formPhone,
+.formEmail,
+.formSum {
+  margin-bottom: 15px;
+}
+
+.input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.button__B2B,
+.link__B2С {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 350ms ease-in-out
+}
+
+.submitButton {
+  background-color: lightblue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 350ms ease-in-out
+}
+
+.submitButton:hover {
+  background-color: blue;
+}
